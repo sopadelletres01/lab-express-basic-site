@@ -1,0 +1,25 @@
+.gallery{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.gallery__item:nth-child(2n+1) {
+    grid-column: span 2;
+ }
+
+.gallery__item:nth-child(2n+3) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: red;
+}
+
+
+  
